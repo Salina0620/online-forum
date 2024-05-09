@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Forum</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom CSS for Navbar */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the navigation appears above other content */
+  background-color: #dad2d2; /* Optional: Add background color */
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  font-size: 18px; /* Adjust icon size */
+  margin-left: 15px; /* Adjust spacing between icons */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0b6dde; /* Change color on hover */
+}
+
+.dropdown-menu .dropdown-item {
+  font-size: 16px; /* Adjust dropdown item size */
+}
+
+hr {
+  height: 0.5px; /* Adjust the height to make the <hr> larger */
+  border: none; /* Remove the default border */
+  border-top: 4px solid #0b0303; /* Add a border to the top of the <hr> */
+  background-color: transparent; /* Remove the default background color */
+}
+
+
+  /* css for dashboard */
+.inline-item-list {
+    list-style: none;
+    /* padding: 1rem; */
+}
+
+.inline-item-list a {
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: grey;
+
+}
+
+.inline-item-list li {
+    margin-bottom: 10px;
+}
+#sticky-dashboard {
+  position: sticky;
+  top: 7rem;
+  height: calc(100vh - 80px); /* Adjust the height according to your layout */
+  overflow-y: auto;
+}
+
+@media (max-width: 992px) {
+  #sticky-dashboard {
+      position: static;
+      height: auto;
+  }
+}
+
+
+
+
+  /* css for post */
+  .icon1{
+    font-size: 20px;
+  }
+  
+
+
+
+  /* css for popular communities */
+  .sticky-sidebar {
+    position: sticky;
+    top: 7rem;
+    height: calc(100vh - 80px); /* Adjust the height according to your layout */
+    overflow-y: auto;
+}
+
+@media (max-width: 992px) {
+    .sticky-sidebar {
+        position: static;
+        height: auto;
+    }
+}
+
+.community-name {
+  color: gray;
+  font-size: 20px;
+}
+
+.list-unstyled li:not(:last-child) {
+  margin-bottom: 15px; /* Margin between each community */
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="sticky-top anish">
+        <div class="fluid-container p-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <nav-logo>
+                        <img src="/images/image2.png" alt="Logo" height="50x" width="100px">
+                    </nav-logo>
+                </div>
+                <div class="col-md-6">
+                    <form class="form-inline my-2 my-lg-0 d-flex">
+                        <input class="form-control mr-sm-2 flex-grow-1" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">View Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Avatar</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </nav>
+
+    <!-- main section starts here -->
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <!-- Dashboard (Left Column) -->
+            <div class="col-md-3" id="sticky-dashboard">
+                <div class="content">
+                    <h2 class="p-3">Categories</h2>
+                    <!-- Dashboard Content Goes Here -->
+                    <ul class="inline-item-list">
+                        <li><a href="health.html">Health Related Post</a></li>
+                        <li><a href="sports.html">Sports Related Post</a></li>
+                        <li><a href="technology.html">Technology Related Post</a></li>
+                        <li><a href="travel.html">Travel Related Post</a></li>
+                    </ul>
+                    <br>
+                    <h2 class="p-3">Resources</h2>
+                    <!-- Dashboard Content Goes Here -->
+                    <ul class="inline-item-list">
+                        <li><a href="/resources/aboutforum.html">About Forum</a></li>
+                        <li><a href="/resources/contentpolicy.html">Content Policy</a></li>
+                        <li><a href="/resources/privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="/resources/useragreement.html">User Agreement</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- Post (Middle Column) -->
+            <div class="col-md-6">
+                <div class="content">
+                    <h2>Technology Feed</h2>
+                    <!-- Post Content Goes Here -->
+
+                    <div class="card" style="max-width: 900px;">
+                        <div class="card-body">
+                            <h5 class="card-title">The Most Affordable Cloud for AI/ML Inference at Scale</h5>
+                            <p class="card-text">Deploy AI/ML production models without headaches on the lowest priced
+                                GPUs (starting from $0.02/hr) in the market</p>
+                        </div>
+                        <img src="https://external-preview.redd.it/2Rv-5WMyuKrDvKQSWBnMhwIIQ5RnrlKxop0HxyEcWmA.jpg?width=640&crop=smart&auto=webp&s=05f26be3d86c4d90ff70478b40bf1fa2c0136558"
+                            class="card-img-top" alt="...">
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <div class="d-flex align-items-center icon1">
+                                <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                                <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                                <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="max-width: 900px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Meet Alan Stern, Southwest Research Institute’s first official space traveler</h5>
+                            <p class="card-text">An associate vice president of Southwest Research Institute’s Space Science Division and an independent science consultant, Stern has contributed significantly to the field that inspired him. He has helped to build the San Antonio-based institute’s space science and engineering division, extend what we know about icy objects deep in our solar system, and push commercial space travel to new heights.</p>
+                        </div>
+                        <img src="https://i0.wp.com/sanantonioreport.org/wp-content/uploads/2023/11/IMG_7512.png?resize=1536%2C1024&ssl=1" class="card-img-top" alt="...">
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="d-flex align-items-center icon1">
+                            <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                            <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                            <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="max-width: 900px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Tesla rescinded interns</h5>
+                            <p class="card-text">Coinbase hiring Tesla rescinded interns.</p>
+                        </div>
+                        <img src="https://i.redd.it/bzai0dqft2zc1.jpeg" alt="...">
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="d-flex align-items-center icon1">
+                            <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                            <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                            <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="max-width: 900px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Anyone find that one airpod charges faster than the other?</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card.</p> -->
+                        </div>
+                        <img src="https://i.redd.it/og3bw6sbivyc1.jpeg" class="card-img-top" alt="...">
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="d-flex align-items-center icon1">
+                            <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                            <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                            <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="max-width: 900px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Hack exposes Indian police facial recognition data amid growing surveillance concerns</h5>
+                            <p class="card-text">In India, a breach of the Tamil Nadu Police Facial Recognition Portal by the hacker group ‘Valerie’ exposed data on over 50,000 people, including police officers and First Information Reports (FIRs). The stolen information is now being sold on the dark web and could be exploited for scams</p>
+                        </div>
+                        <img src="https://diplo-media.s3.eu-central-1.amazonaws.com/2023/04/facial-recognition-technology-concept-as-woman-has-red-grid-projected-onto-face-in-studio-682x1024.jpg" class="card-img-top" alt="...">
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="d-flex align-items-center icon1">
+                            <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                            <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                            <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="max-width: 900px;">
+                        <div class="card-body">
+                            <h5 class="card-title">South Africa to establish AI expert advisory council to shape future regulations</h5>
+                            <p class="card-text"> South Africa is set to establish an AI Expert Advisory Council to address regulatory challenges amidst broader discussions on the ethical considerations and economic benefits of AI adoption.</p>
+                        </div>
+                        <img src="https://diplo-media.s3.eu-central-1.amazonaws.com/2024/04/create-south-african-flag-in-resolution-1920x300-the-flag-should-be-realistic-and-vaiwing-only-the-flag-no-background-1-1024x585.jpg" alt="...">
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="d-flex align-items-center icon1">
+                            <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                            <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                            <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                        </div>
+                    </div>
+                    <br>
+                  
+                    <br>
+                   
+
+                </div>
+            </div>
+
+
+
+
+
+            <!-- popular communities -->
+            <div class="col-md-3">
+                <div class="content sticky-sidebar">
+                    <h2>Popular Topic Communities</h2>
+                    <!-- Popular Communities Content Goes Here -->
+                    <!-- Add more popular communities content here -->
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">
+                                <span class="font-weight-bold community-name p-2">r/tech</span>
+                                <i class="fa-solid fa-computer"></i>
+                                <!-- <img src="profile_icons/tech_icon.png" alt="Tech Community Icon" class="community-icon"> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="font-weight-bold community-name p-2">r/sports</span>
+                                <i class="fa-solid fa-medal"></i>
+                                <!-- <img src="profile_icons/sports_icon.png" alt="Sports Community Icon" class="community-icon"> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="font-weight-bold community-name p-2">r/health</span>
+                                <i class="fa-solid fa-hospital"></i>
+                                <!-- <img src="profile_icons/health_icon.png" alt="Health Community Icon" class="community-icon"> -->
+                            </a>
+                        </li>
+                        <!-- Add more communities -->
+                        <li>
+                            <a href="#">
+                                <span class="font-weight-bold community-name p-2">r/travel</span>
+                                <i class="fa-solid fa-plane"></i>
+                                <!-- <img src="profile_icons/travel_icon.png" alt="Travel Community Icon" class="community-icon"> -->
+                            </a>
+                        </li>
+                        <li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/3110fbbca9.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+
+
+</html>
