@@ -7,20 +7,29 @@
     <title>Online Forum</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/62b4db17f2.js" crossorigin="anonymous"></script>
+
 </head>
+
+
+
 
 <body>
     <nav class="sticky-top anish">
         <div class="fluid-container p-3">
             <div class="row">
                 <div class="col-md-3">
+                    <!-- <a href="index.html" class="border-3 avaad text-black">Home</a> -->
                     <nav-logo>
-                        <img src="/images/image2.png" alt="Logo" height="50x" width="100px">
+                       <a href="index.html">
+
+                           <img src="/images/image2-removebg-preview.png" alt="Logo" height="50x" width="100px">
+                       </a>
                     </nav-logo>
-                </div>  
+                </div>
                 <div class="col-md-6">
                     <form class="form-inline my-2 my-lg-0 d-flex">
                         <input class="form-control mr-sm-2 flex-grow-1" type="search" placeholder="Search"
@@ -28,7 +37,23 @@
                         <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-0.5" style="padding-top: 9.5px; padding-left: 20px; width: 40px;" >
+                    <a href=""> <i style="color: black;" class="fa fa-bell" ></i>
+
+                </div>
+                <div class="col-md-0.5" style="padding-top: 9.5px; padding-left: 20px; padding-left: 20px;" >
+                   <a href=""> <i style="color: black;" class="fa fa-comment-dots" ></i>
+                   </a>
+                    <!-- <i class="fa fa-comment-dots"></i>&nbsp;&nbsp; -->
+                
+                </div>
+                <div class="col-md-1">
+                    <div class="cr" style="margin-top: 9.5px; margin-left: 6px" >
+
+                        <a href="create.html" style="color: black; border: 2px solid black; background-color: transparent;">+Create</a>
+                    </div>
+                </div>
+                <div class="col-md-1"> 
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -36,7 +61,7 @@
                                 <i class="fas fa-user"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">View Profile</a></li>
+                                <li><a href="profile.html" class="dropdown-item" href="#">View Profile</a></li>
                                 <li><a class="dropdown-item" href="#">Avatar</a></li>
                                 <li><a class="dropdown-item" href="#">Settings</a></li>
                                 <li>
@@ -63,19 +88,19 @@
                     <h2 class="p-3">Categories</h2>
                     <!-- Dashboard Content Goes Here -->
                     <ul class="inline-item-list">
-                        <li><a href="categories/health.html">Health Related Post</a></li>
-                        <li><a href="categories/sports.html">Sports Related Post</a></li>
-                        <li><a href="categories/technology.html">Technology Related Post</a></li>
-                        <li><a href="categories/travel.html">Travel Related Post</a></li>
+                        <li><a href="health.html">Health Related Post</a></li>
+                        <li><a href="sports.html">Sports Related Post</a></li>
+                        <li><a href="technology.html">Technology Related Post</a></li>
+                        <li><a href="travel.html">Travel Related Post</a></li>
                     </ul>
                     <br>
                     <h2 class="p-3">Resources</h2>
                     <!-- Dashboard Content Goes Here -->
                     <ul class="inline-item-list">
-                        <li><a href="/resources/aboutforum.html">About Forum</a></li>
-                        <li><a href="/resources/contentpolicy.html">Content Policy</a></li>
-                        <li><a href="/resources/privacypolicy.html">Privacy Policy</a></li>
-                        <li><a href="/resources/useragreement.html">User Agreement</a></li>
+                        <li><a href="aboutforum.html">About Forum</a></li>
+                        <li><a href="contentpolicy.html">Content Policy</a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="useragreement.html">User Agreement</a></li>
                     </ul>
                 </div>
             </div>
@@ -84,54 +109,95 @@
 
             <!-- Post (Middle Column) -->
             <div class="col-md-6">
+                
                 <div class="content">
                     <h2>Forum Feed</h2>
-                    <!-- Post Content Goes Here -->
+      <div style="display: flex;" class="ss">
 
-                    <div class="card" style="max-width: 900px;">
-                        <div class="card-body">
-                            <h5 class="card-title">The Most Affordable Cloud for AI/ML Inference at Scale</h5>
-                            <p class="card-text">Deploy AI/ML production models without headaches on the lowest priced
-                                GPUs (starting from $0.02/hr) in the market</p>
+          <div style="margin-left: -40px; height: 900px;" class="col-md-6">
+          
+              <div class="card" style="max-width: 900px;">
+                  <div class="card-body">
+                      <div style="display: flex;" class="name">
+          
+                          <img style="border-radius: 90%; width: 85px;" src="images/1.jpg" alt="">
+                          <div class="desc">
+          
+                              <h4 style="margin-left: 15px;">Joe Biden</h4>
+                              <h6 style="margin-left: 15px;">Updated at 29 May</h6>
+                          </div>
+                      </div>
+                      <br>
+                      <h5 class="card-title">The Most Affordable Cloud for AI/ML Inference at Scale</h5>
+                      <!-- <div class="post-meta">Posted by Salina</div> -->
+                      <!-- <div class="post-content" style="margin-top: 10px;" > -->
+          
+                          <p class="card-text">Deploy AI/ML production models without headaches on the lowest priced
+                              GPUs (starting from $0.02/hr) in the market</p>
+                      <!-- </div> -->
+                  </div>
+                  <img src="https://external-preview.redd.it/2Rv-5WMyuKrDvKQSWBnMhwIIQ5RnrlKxop0HxyEcWmA.jpg?width=640&crop=smart&auto=webp&s=05f26be3d86c4d90ff70478b40bf1fa2c0136558"
+                      class="card-img-top" alt="...">
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <div class="d-flex align-items-center icon1">
+                      <a href="">
+          
+                          <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                      </a>
+                      <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                      <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                  </div>
+                  <!-- <div class="like-comment-share" style="margin-top: 10px;" >
+                      <button>Like</button>
+                      <button>Comment</button>
+                      <button>Share</button>
+                  </div> -->
+              </div>
+          </div>
+          <div class="col-md-6">
+          
+              <div class="card" style="max-width: 900px; height: 800px;">
+                  <div class="card-body">
+                    <div style="display: flex;" class="name">
+          
+                        <img style="border-radius: 90%; width: 85px;" src="images/2.jpg" alt="">
+                        <div class="desc">
+        
+                            <h4 style="margin-left: 15px;">Joe Biden</h4>
+                            <h6 style="margin-left: 15px;">Updated at 29 May</h6>
                         </div>
-                        <img src="https://external-preview.redd.it/2Rv-5WMyuKrDvKQSWBnMhwIIQ5RnrlKxop0HxyEcWmA.jpg?width=640&crop=smart&auto=webp&s=05f26be3d86c4d90ff70478b40bf1fa2c0136558"
-                            class="card-img-top" alt="...">
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        <div class="d-flex align-items-center icon1">
-                            <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
-                            <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
-                            <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
-                        </div>
+                    
                     </div>
                     <br>
-                    <div class="card" style="max-width: 900px;">
-                        <div class="card-body">
-                            <h5 class="card-title">PARTHIV PATEL HAS BEEN ELIMINATED</h5>
-                            <p class="card-text">Day 5 of ranking all of our legends in order. The most upvoted player
-                                get's eliminated</p>
-                        </div>
-                        <img src="https://i.redd.it/66v9rmrop4zc1.png" class="card-img-top" alt="...">
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        <div class="d-flex align-items-center icon1">
-                            <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
-                            <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
-                            <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
-                        </div>
-                    </div>
+                      <h5 class="card-title">PARTHIV PATEL HAS BEEN ELIMINATED</h5>
+                      <p class="card-text">Day 5 of ranking all of our legends in order. The most upvoted player
+                          get's eliminated</p>
+                  </div>
+                  <img src="https://i.redd.it/66v9rmrop4zc1.png" class="card-img-top" alt="...">
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <div class="d-flex align-items-center icon1">
+                      <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                      <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                      <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                  </div>
+              </div>
+              <div class="card" style="max-width: 900px;">
+                  <div class="card-body">
+                      <h5 class="card-title">Tesla rescinded interns</h5>
+                      <p class="card-text">Coinbase hiring Tesla rescinded interns.</p>
+                  </div>
+                  <img src="https://i.redd.it/bzai0dqft2zc1.jpeg" alt="...">
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <div class="d-flex align-items-center icon1">
+                      <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                      <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                      <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                  </div>
+              </div>
+          </div>
+      </div>              <!-- Post Content Goes Here -->
                     <br>
-                    <div class="card" style="max-width: 900px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Tesla rescinded interns</h5>
-                            <p class="card-text">Coinbase hiring Tesla rescinded interns.</p>
-                        </div>
-                        <img src="https://i.redd.it/bzai0dqft2zc1.jpeg" alt="...">
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        <div class="d-flex align-items-center icon1">
-                            <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
-                            <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
-                            <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
-                        </div>
-                    </div>
+                    <br>
                     <br>
                     <div class="card" style="max-width: 900px;">
                         <div class="card-body">
@@ -398,6 +464,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
     <script src="script.js"></script>
 

@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   z-index: 1000; /* Ensure the navigation appears above other content */
-  background-color: #dad2d2; /* Optional: Add background color */
+  background-color: #efebeb; /* Optional: Add background color */
 }
 
 .navbar-nav .nav-link {
@@ -15,10 +15,22 @@
 .navbar-nav .nav-link:hover {
   color: #0b6dde; /* Change color on hover */
 }
+#more {
+  display: none;
+}
+
+.border-3 {
+  border: 2px solid rgb(4, 3, 3);
+  padding: 5px 10px;
+  color: black;
+  background-color: #d7b7b7;
+  /* Any other styles you want */
+}
 
 .dropdown-menu .dropdown-item {
   font-size: 16px; /* Adjust dropdown item size */
 }
+
 
 hr {
   height: 0.5px; /* Adjust the height to make the <hr> larger */
@@ -93,3 +105,21 @@ hr {
 .list-unstyled li:not(:last-child) {
   margin-bottom: 15px; /* Margin between each community */
 }
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+/* .like-comment-share button{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+
+} */

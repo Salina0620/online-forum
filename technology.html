@@ -8,105 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Custom CSS for Navbar */
-.sticky-top {
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* Ensure the navigation appears above other content */
-  background-color: #dad2d2; /* Optional: Add background color */
-}
-
-.navbar-nav .nav-link {
-  color: #333;
-  font-size: 18px; /* Adjust icon size */
-  margin-left: 15px; /* Adjust spacing between icons */
-}
-
-.navbar-nav .nav-link:hover {
-  color: #0b6dde; /* Change color on hover */
-}
-
-.dropdown-menu .dropdown-item {
-  font-size: 16px; /* Adjust dropdown item size */
-}
-
-hr {
-  height: 0.5px; /* Adjust the height to make the <hr> larger */
-  border: none; /* Remove the default border */
-  border-top: 4px solid #0b0303; /* Add a border to the top of the <hr> */
-  background-color: transparent; /* Remove the default background color */
-}
-
-
-  /* css for dashboard */
-.inline-item-list {
-    list-style: none;
-    /* padding: 1rem; */
-}
-
-.inline-item-list a {
-  font-size: 22px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bolder;
-  color: grey;
-
-}
-
-.inline-item-list li {
-    margin-bottom: 10px;
-}
-#sticky-dashboard {
-  position: sticky;
-  top: 7rem;
-  height: calc(100vh - 80px); /* Adjust the height according to your layout */
-  overflow-y: auto;
-}
-
-@media (max-width: 992px) {
-  #sticky-dashboard {
-      position: static;
-      height: auto;
-  }
-}
-
-
-
-
-  /* css for post */
-  .icon1{
-    font-size: 20px;
-  }
-  
-
-
-
-  /* css for popular communities */
-  .sticky-sidebar {
-    position: sticky;
-    top: 7rem;
-    height: calc(100vh - 80px); /* Adjust the height according to your layout */
-    overflow-y: auto;
-}
-
-@media (max-width: 992px) {
-    .sticky-sidebar {
-        position: static;
-        height: auto;
-    }
-}
-
-.community-name {
-  color: gray;
-  font-size: 20px;
-}
-
-.list-unstyled li:not(:last-child) {
-  margin-bottom: 15px; /* Margin between each community */
-}
-
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
+   
 </head>
 
 <body>
@@ -114,8 +17,12 @@ hr {
         <div class="fluid-container p-3">
             <div class="row">
                 <div class="col-md-3">
+                    <!-- <a href="index.html" class="border-3 avaad text-black">Home</a> -->
                     <nav-logo>
-                        <img src="/images/image2.png" alt="Logo" height="50x" width="100px">
+                       <a href="index.html">
+
+                           <img src="/images/image2-removebg-preview.png" alt="Logo" height="50x" width="100px">
+                       </a>
                     </nav-logo>
                 </div>
                 <div class="col-md-6">
@@ -125,7 +32,23 @@ hr {
                         <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-0.5" style="padding-top: 9.5px; padding-left: 20px; width: 40px;" >
+                    <a href=""> <i style="color: black;" class="fa fa-bell" ></i>
+
+                </div>
+                <div class="col-md-0.5" style="padding-top: 9.5px; padding-left: 20px; padding-left: 20px;" >
+                   <a href=""> <i style="color: black;" class="fa fa-comment-dots" ></i>
+                   </a>
+                    <!-- <i class="fa fa-comment-dots"></i>&nbsp;&nbsp; -->
+                
+                </div>
+                <div class="col-md-1">
+                    <div class="cr" style="margin-top: 9.5px; margin-left: 6px" >
+
+                        <a href="create.html" style="color: black; border: 2px solid black; background-color: transparent;">+Create</a>
+                    </div>
+                </div>
+                <div class="col-md-1"> 
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -169,10 +92,10 @@ hr {
                     <h2 class="p-3">Resources</h2>
                     <!-- Dashboard Content Goes Here -->
                     <ul class="inline-item-list">
-                        <li><a href="/resources/aboutforum.html">About Forum</a></li>
-                        <li><a href="/resources/contentpolicy.html">Content Policy</a></li>
-                        <li><a href="/resources/privacypolicy.html">Privacy Policy</a></li>
-                        <li><a href="/resources/useragreement.html">User Agreement</a></li>
+                        <li><a href="aboutforum.html">About Forum</a></li>
+                        <li><a href="contentpolicy.html">Content Policy</a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="useragreement.html">User Agreement</a></li>
                     </ul>
                 </div>
             </div>
@@ -182,43 +105,31 @@ hr {
             <!-- Post (Middle Column) -->
             <div class="col-md-6">
                 <div class="content">
-                    <h2>Sports Feed</h2>
+                    <h2>Technology Feed</h2>
                     <!-- Post Content Goes Here -->
 
                     <div class="card" style="max-width: 900px;">
                         <div class="card-body">
-                            <h5 class="card-title">NEPAL WINS 5th T20 TO SALVAGE SOME PRIDE.</h5>
-                            <p class="card-text">Half-centuries from Aasif Sheikh and Anil Sah, and an explosive innings from Kushal Malla, backed by three wickets hauls from Sagar Dhakal and Sompal Kami give Nepal a six-wicket victory over visiting West Indies A in Kirtipur.</p>
+                            <h5 class="card-title">The Most Affordable Cloud for AI/ML Inference at Scale</h5>
+                            <p class="card-text">Deploy AI/ML production models without headaches on the lowest priced
+                                GPUs (starting from $0.02/hr) in the market</p>
                         </div>
-                        <img src="https://assets-api.kathmandupost.com/thumb.php?src=https://assets-cdn.kathmandupost.com/uploads/source/news/2024/third-party/GMucR8qbwAAxeZl-1714817959.jpg&w=400&height=267" alt="...">
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        <div class="d-flex align-items-center icon1">
-                            <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
-                            <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
-                            <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
-                        </div>
-                    </div>
-                    <div class="card" style="max-width: 900px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Real Madrid wins record-extending 36th La Liga title</h5>
-                            <p class="card-text">Real Madrid sealed a record-extending 36th La Liga title on Saturday after rival Barcelona suffered a second-half collapse against Girona, succumbing to a 4-2 defeat which ensured that Los Blancos cannot be overtaken at the top of the table.</p>
-                        </div>
-                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2150898443-restricted.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" class="card-img-top" alt="...">
-                        <p class="card-text"><small class="text-muted">Last updated 8 mins ago</small></p>
-                        <div class="d-flex align-items-center icon1">
-                            <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
-                            <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
-                            <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                        <img src="https://external-preview.redd.it/2Rv-5WMyuKrDvKQSWBnMhwIIQ5RnrlKxop0HxyEcWmA.jpg?width=640&crop=smart&auto=webp&s=05f26be3d86c4d90ff70478b40bf1fa2c0136558"
+                            class="card-img-top" alt="...">
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <div class="d-flex align-items-center icon1">
+                                <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                                <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                                <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
                         </div>
                     </div>
                     <br>
                     <div class="card" style="max-width: 900px;">
                         <div class="card-body">
-                            <h5 class="card-title">PARTHIV PATEL HAS BEEN ELIMINATED</h5>
-                            <p class="card-text">Day 5 of ranking all of our legends in order. The most upvoted player
-                                get's eliminated</p>
+                            <h5 class="card-title">Meet Alan Stern, Southwest Research Institute’s first official space traveler</h5>
+                            <p class="card-text">An associate vice president of Southwest Research Institute’s Space Science Division and an independent science consultant, Stern has contributed significantly to the field that inspired him. He has helped to build the San Antonio-based institute’s space science and engineering division, extend what we know about icy objects deep in our solar system, and push commercial space travel to new heights.</p>
                         </div>
-                        <img src="https://i.redd.it/66v9rmrop4zc1.png" class="card-img-top" alt="...">
+                        <img src="https://i0.wp.com/sanantonioreport.org/wp-content/uploads/2023/11/IMG_7512.png?resize=1536%2C1024&ssl=1" class="card-img-top" alt="...">
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                         <div class="d-flex align-items-center icon1">
                             <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
@@ -229,27 +140,10 @@ hr {
                     <br>
                     <div class="card" style="max-width: 900px;">
                         <div class="card-body">
-                            <h5 class="card-title">NIRAJ TAMANG WINS MAIDEN CAREER TITLE.</h5>
-                            <p class="card-text">Tamang cards 8-under 60 for a total score of 8-under 264, registering a one-stroke victory over Bhuvan Nagarkoti.
-
-                                </p>
+                            <h5 class="card-title">Tesla rescinded interns</h5>
+                            <p class="card-text">Coinbase hiring Tesla rescinded interns.</p>
                         </div>
-                        <img src="https://assets-api.kathmandupost.com/thumb.php?src=https://assets-cdn.kathmandupost.com/uploads/source/news/2024/third-party/NirajTamang2jpeg-1714139375.jpg&w=400&height=267" alt="...">
-                        <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
-                        <div class="d-flex align-items-center icon1">
-                            <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
-                            <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
-                            <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="card" style="max-width: 900px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Lionel Messi breaks more Major League Soccer records in astonishing performance</h5>
-                            <p class="card-text">The World Cup-winning Argentine became the first player in the league to make five assists in a single game, while his goal and assists made his six-goal contribution at Chase Stadium the most in a single game in the league’s history.</p>
-                        </div>
-                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2150963210.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" class="card-img-top" alt="...">
+                        <img src="https://i.redd.it/bzai0dqft2zc1.jpeg" alt="...">
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                         <div class="d-flex align-items-center icon1">
                             <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
@@ -257,10 +151,52 @@ hr {
                             <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
                         </div>
                     </div>
+                    <br>
+                    <div class="card" style="max-width: 900px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Anyone find that one airpod charges faster than the other?</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card.</p> -->
+                        </div>
+                        <img src="https://i.redd.it/og3bw6sbivyc1.jpeg" class="card-img-top" alt="...">
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="d-flex align-items-center icon1">
+                            <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                            <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                            <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="max-width: 900px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Hack exposes Indian police facial recognition data amid growing surveillance concerns</h5>
+                            <p class="card-text">In India, a breach of the Tamil Nadu Police Facial Recognition Portal by the hacker group ‘Valerie’ exposed data on over 50,000 people, including police officers and First Information Reports (FIRs). The stolen information is now being sold on the dark web and could be exploited for scams</p>
+                        </div>
+                        <img src="https://diplo-media.s3.eu-central-1.amazonaws.com/2023/04/facial-recognition-technology-concept-as-woman-has-red-grid-projected-onto-face-in-studio-682x1024.jpg" class="card-img-top" alt="...">
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="d-flex align-items-center icon1">
+                            <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                            <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                            <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="max-width: 900px;">
+                        <div class="card-body">
+                            <h5 class="card-title">South Africa to establish AI expert advisory council to shape future regulations</h5>
+                            <p class="card-text"> South Africa is set to establish an AI Expert Advisory Council to address regulatory challenges amidst broader discussions on the ethical considerations and economic benefits of AI adoption.</p>
+                        </div>
+                        <img src="https://diplo-media.s3.eu-central-1.amazonaws.com/2024/04/create-south-african-flag-in-resolution-1920x300-the-flag-should-be-realistic-and-vaiwing-only-the-flag-no-background-1-1024x585.jpg" alt="...">
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="d-flex align-items-center icon1">
+                            <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                            <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                            <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                        </div>
+                    </div>
+                    <br>
+                  
                     <br>
                    
-                    <br>
-                    
 
                 </div>
             </div>
@@ -312,7 +248,6 @@ hr {
         </div>
     </div>
 
-
     <script src="https://kit.fontawesome.com/3110fbbca9.js" crossorigin="anonymous"></script>
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -320,7 +255,8 @@ hr {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
-</body>
+
 
 </html>

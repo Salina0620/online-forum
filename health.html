@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Forum</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="sticky-top anish">
+        <div class="fluid-container p-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- <a href="index.html" class="border-3 avaad text-black">Home</a> -->
+                    <nav-logo>
+                       <a href="index.html">
+
+                           <img src="/images/image2-removebg-preview.png" alt="Logo" height="50x" width="100px">
+                       </a>
+                    </nav-logo>
+                </div>
+                <div class="col-md-6">
+                    <form class="form-inline my-2 my-lg-0 d-flex">
+                        <input class="form-control mr-sm-2 flex-grow-1" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="col-md-0.5" style="padding-top: 9.5px; padding-left: 20px; width: 40px;" >
+                    <a href=""> <i style="color: black;" class="fa fa-bell" ></i>
+
+                </div>
+                <div class="col-md-0.5" style="padding-top: 9.5px; padding-left: 20px; padding-left: 20px;" >
+                   <a href=""> <i style="color: black;" class="fa fa-comment-dots" ></i>
+                   </a>
+                    <!-- <i class="fa fa-comment-dots"></i>&nbsp;&nbsp; -->
+                
+                </div>
+                <div class="col-md-1">
+                    <div class="cr" style="margin-top: 9.5px; margin-left: 6px" >
+
+                        <a href="create.html" style="color: black; border: 2px solid black; background-color: transparent;">+Create</a>
+                    </div>
+                </div>
+                <div class="col-md-1"> 
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">View Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Avatar</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </nav>
+
+    <!-- main section starts here -->
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <!-- Dashboard (Left Column) -->
+            <div class="col-md-3" id="sticky-dashboard">
+                <div class="content">
+                    <h2 class="p-3">Categories</h2>
+                    <!-- Dashboard Content Goes Here -->
+                    <ul class="inline-item-list">
+                        <li><a href="health.html">Health Related Post</a></li>
+                        <li><a href="sports.html">Sports Related Post</a></li>
+                        <li><a href="technology.html">Technology Related Post</a></li>
+                        <li><a href="travel.html">Travel Related Post</a></li>
+                    </ul>
+                    <br>
+                    <h2 class="p-3">Resources</h2>
+                    <!-- Dashboard Content Goes Here -->
+                    <ul class="inline-item-list">
+                        <li><a href="aboutforum.html">About Forum</a></li>
+                        <li><a href="contentpolicy.html">Content Policy</a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="useragreement.html">User Agreement</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- Post (Middle Column) -->
+            <div class="col-md-6">
+                <div class="content">
+                    <h2>Health Feed</h2>
+                    <!-- Post Content Goes Here -->
+                    <div style="display: flex;" class="ss">
+
+                        <div style="margin-left: -40px; height: 900px;" class="col-md-6">
+                            <div class="card" style="max-width: 900px; height: 600px; margin-right: 20px;">
+                                <div class="card-body">
+                                    <div style="display: flex;" class="name">
+                                        <img style="border-radius: 90%; width: 85px;" src="images/2.jpg" alt="">
+                                        <div class="desc">
+                                            <h4 style="margin-left: 15px;">Smarika Sharma</h4>
+                                            <h6 style="margin-left: 15px;">Updated at 9 April</h6>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="card-title">MEN'S HEALTH</h5>
+                                    <p class="card-text" id="firstParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span id="dots">...</span><span id="more" style="display: none;">Lorem ipsum hello after  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis beatae exerc</span></p>
+                                    <span onclick="toggleText()" id="myBtn" style="border: none; cursor: pointer; color: blue;">See More...</span>
+                                    <img src="https://cdn3.vectorstock.com/i/1000x1000/68/27/mens-health-awareness-month-in-june-banner-vector-37646827.jpg"
+                                        class="card-img-top"  alt="...">
+                                </div>
+                                <br>
+                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                <div class="d-flex align-items-center icon1">
+                                    <a href="">
+                                        <i style="color: black;" class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                                        <i style="color: black;" class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                                        <i style="color: black;" class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                                    </a>
+                                </div>
+                             
+                            </div>
+                            <br>
+                            <div class="card" style="max-width: 800px; height: 600px; margin-right: 20px; ">
+                                <div class="card-body">
+                                    <div style="display: flex;" class="name">
+                  
+                                        <img style="border-radius: 90%; width: 85px;" src="images/5.jpg" alt="">
+                                        <div class="desc">
+                        
+                                            <h4 style="margin-left: 15px;">Jay Mishra</h4>
+                                            <h6 style="margin-left: 15px;">Updated at 29 May</h6>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="card-title">STUDENT DOCTOR NETWORK</h5>
+                                    <p class="card-text">Student Doctor Network is helping build a diverse doctor workforce by providing a wide range of free resources to help students in their educational journey.
+        
+                                    </p>
+                                </div>
+                                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                <br>
+                                <div class="d-flex align-items-center icon1">
+                                    <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                                    <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                                    <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card" style="max-width: 800px; height: 600px;margin-right: 20px; ">
+                                <div class="card-body">
+                                    <div style="display: flex;" class="name">
+                  
+                                        <img style="border-radius: 90%; width: 85px;" src="images/1.jpg" alt="">
+                                        <div class="desc">
+                        
+                                            <h4 style="margin-left: 15px;">Suman Baral</h4>
+                                            <h6 style="margin-left: 15px;">Updated at 29 May</h6>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="card-title">GENERAL HEALTH HELP</h5>
+                                    <p class="card-text">MedHelp is a unique source of medical, health, and wellness information created by you, our users. This section of the forum is for talking about issues like appendicitis, Canker Sores, swollen gums, Asymptomatic Pyuria/Bacteriuria and more.</p>
+                                </div>
+                                <img src="data:image/png;base64,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" alt="...">
+<br>
+                                <div class="d-flex align-items-center icon1">
+                                    <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                                    <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                                    <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card" style="max-width: 800px; height: 600px; margin-right: 20px;">
+                                <div class="card-body">
+                                    <div style="display: flex;" class="name">
+                  
+                                        <img style="border-radius: 90%; width: 85px;" src="images/5.jpg" alt="">
+                                        <div class="desc">
+                        
+                                            <h4 style="margin-left: 15px;">Joe Biden</h4>
+                                            <h6 style="margin-left: 15px;">Updated at 29 May</h6>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="card-title">[FRESH ALBUM] HEALTH - RAT WARS</h5>
+                                    <p class="card-text">Pretty fun overall, singles were almost perfect,album also delivers.
+                                        Their description "downward spiral for people with more than two monitors" is spot on
+                                    </p>
+                                </div>
+                                <img src="https://external-preview.redd.it/fresh-album-health-rat-wars-v0-zLPk3Ki77jTjciR0lEuuDsAuEDzZBkgBGfoTrW55G_c.jpg?auto=webp&s=229a86b0a3ebdb847dbabbee1f790c66ef15b9d6"
+                                    class="card-img-top" alt="...">
+                                <div class="d-flex align-items-center icon1">
+                                    <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                                    <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                                    <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div style="margin-left: -40px; height: 900px;" class="col-md-6">
+                            <div class="card" style="max-width: 800px; height: 600px;">
+                                <div class="card-body">
+                                    <div style="display: flex;" class="name">
+                  
+                                        <img style="border-radius: 90%; width: 85px;" src="images/3.jpg" alt="">
+                                        <div class="desc">
+                        
+                                            <h4 style="margin-left: 15px;">Sara Hamal</h4>
+                                            <h6 style="margin-left: 15px;">Updated at 29 May</h6>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="card-title">WOMEN'S HEALTH</h5>
+                                    <p class="card-text">
+                                        Study identifies strong link between red, processed meat intake and severe kidney damage in diabetic women. Study identifies strong link between red </p>
+.                                    </p>
+
+                                </div>
+                                <img src="data:image/jpeg;base64,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" height="280px" class="card-img-top" alt="...">
+                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                <br>
+                                <div class="d-flex align-items-center icon1">
+                                    <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                                    <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                                    <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                                </div>
+                            </div>
+                            <br> 
+                            <div class="card" style="max-width: 800px; height: 600px;">
+                                <div class="card-body">
+                                    <div style="display: flex;" class="name">
+                  
+                                        <img style="border-radius: 90%; width: 85px;" src="images/1.jpg" alt="">
+                                        <div class="desc">
+                        
+                                            <h4 style="margin-left: 15px;">Joe Biden</h4>
+                                            <h6 style="margin-left: 15px;">Updated at 29 May</h6>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="card-title">HEALTH, NUTRITION & SPECIAL DIETS</h5>
+                                    <p class="card-text">Do superfoods really exists?? </p>
+                                    <br>
+                                    <p>The term ‘superfood’ is used to define food items that have high levels of particular nutrients (antioxidants, vitamins, or minerals) and extra health benefits. However, scientific evidence in support of the real health benefits of these foods is mostly inconclusive.</p>
+                                </div>
+                                <img src="https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20190922115751/ri/673/picture/2019/9/%40shutterstock_408375406.jpg" class="card-img-top" alt="...">
+                                <br>
+                                <div class="d-flex align-items-center icon1">
+                                    <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                                    <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                                    <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                                </div>
+                            </div>
+                            <br>
+                          
+                           
+                            <div class="card" style="max-width: 800px; height: 600px;">
+                                <div class="card-body">
+                                    <div style="display: flex;" class="name">
+                  
+                                        <img style="border-radius: 90%; width: 85px;" src="images/4.jpg" alt="">
+                                        <div class="desc">
+                        
+                                            <h4 style="margin-left: 15px;">William Swift</h4>
+                                            <h6 style="margin-left: 15px;">Updated at 29 May</h6>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="card-title">MENTAL HEALTH</h5>
+                                    <p class="card-text"> Any recommendations for increasing health even more?</p>
+                                </div>
+                                <img src="https://preview.redd.it/atm9-any-recommendations-for-increasing-health-even-more-v0-jrskzjrc6ebc1.png?auto=webp&s=9a54e6c3a6316ca2fc2146255ef56b1b536ef248"
+                                
+                        
+                                    class="card-img-top" alt="...">
+                                    <br>
+                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                <div class="d-flex align-items-center icon1">
+                                    <i class="far fa-thumbs-up me-3 p-2"></i> <!-- Thumbs up icon -->
+                                    <i class="far fa-comment me-3 p-2"></i> <!-- Comment icon -->
+                                    <i class="fas fa-share me-3 p-2"></i> <!-- Share icon -->
+                                </div>
+                            </div>
+                            <br>
+                            
+                            <br>
+
+                        </div>
+
+                    </div>
+                   
+                  
+                    
+
+                </div>
+            </div>
+
+
+
+
+
+            <!-- popular communities -->
+            <div class="col-md-3">
+                <div class="content sticky-sidebar">
+                    <h2>Popular Topic Communities</h2>
+                    <!-- Popular Communities Content Goes Here -->
+                    <!-- Add more popular communities content here -->
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">
+                                <span class="font-weight-bold community-name p-2">r/tech</span>
+                                <i class="fa-solid fa-computer"></i>
+                                <!-- <img src="profile_icons/tech_icon.png" alt="Tech Community Icon" class="community-icon"> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="font-weight-bold community-name p-2">r/sports</span>
+                                <i class="fa-solid fa-medal"></i>
+                                <!-- <img src="profile_icons/sports_icon.png" alt="Sports Community Icon" class="community-icon"> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="font-weight-bold community-name p-2">r/health</span>
+                                <i class="fa-solid fa-hospital"></i>
+                                <!-- <img src="profile_icons/health_icon.png" alt="Health Community Icon" class="community-icon"> -->
+                            </a>
+                        </li>
+                        <!-- Add more communities -->
+                        <li>
+                            <a href="#">
+                                <span class="font-weight-bold community-name p-2">r/travel</span>
+                                <i class="fa-solid fa-plane"></i>
+                                <!-- <img src="profile_icons/travel_icon.png" alt="Travel Community Icon" class="community-icon"> -->
+                            </a>
+                        </li>
+                        <li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/3110fbbca9.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

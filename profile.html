@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Forum</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="sticky-top anish">
+        <div class="fluid-container p-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- <a href="index.html" class="border-3 avaad text-black">Home</a> -->
+                    <nav-logo>
+                       <a href="index.html">
+
+                           <img src="/images/image2-removebg-preview.png" alt="Logo" height="50x" width="100px">
+                       </a>
+                    </nav-logo>
+                </div>
+                <div class="col-md-6">
+                    <form class="form-inline my-2 my-lg-0 d-flex">
+                        <input class="form-control mr-sm-2 flex-grow-1" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="col-md-0.5" style="padding-top: 9.5px; padding-left: 20px; width: 40px;" >
+                    <a href=""> <i style="color: black;" class="fa fa-bell" ></i>
+
+                </div>
+                <div class="col-md-0.5" style="padding-top: 9.5px; padding-left: 20px; padding-left: 20px;" >
+                   <a href=""> <i style="color: black;" class="fa fa-comment-dots" ></i>
+                   </a>
+                    <!-- <i class="fa fa-comment-dots"></i>&nbsp;&nbsp; -->
+                
+                </div>
+                <div class="col-md-1">
+                    <div class="cr" style="margin-top: 9.5px; margin-left: 6px" >
+
+                        <a href="create.html" style="color: black; border: 2px solid black; background-color: transparent;">+Create</a>
+                    </div>
+                </div>
+                <div class="col-md-1"> 
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">View Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Avatar</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </nav>
+
+    <!-- main section starts here -->
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <!-- Dashboard (Left Column) -->
+            <div class="col-md-3" id="sticky-dashboard">
+                <div class="content">
+                    <h2 class="p-3">Categories</h2>
+                    <!-- Dashboard Content Goes Here -->
+                    <ul class="inline-item-list">
+                        <li><a href="health.html">Health Related Post</a></li>
+                        <li><a href="sports.html">Sports Related Post</a></li>
+                        <li><a href="technology.html">Technology Related Post</a></li>
+                        <li><a href="travel.html">Travel Related Post</a></li>
+                    </ul>
+                    <br>
+                    <h2 class="p-3">Resources</h2>
+                    <!-- Dashboard Content Goes Here -->
+                    <ul class="inline-item-list">
+                        <li><a href="aboutforum.html">About Forum</a></li>
+                        <li><a href="contentpolicy.html">Content Policy</a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="useragreement.html">User Agreement</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- Post (Middle Column) -->
+           
+
+
+
+
+            <!-- popular communities -->
+            <div class="col-md-3">
+                <div class="content sticky-sidebar">
+                    <h2>Popular Topic Communities</h2>
+                    <!-- Popular Communities Content Goes Here -->
+                    <!-- Add more popular communities content here -->
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">
+                                <span class="font-weight-bold community-name p-2">r/tech</span>
+                                <i class="fa-solid fa-computer"></i>
+                                <!-- <img src="profile_icons/tech_icon.png" alt="Tech Community Icon" class="community-icon"> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="font-weight-bold community-name p-2">r/sports</span>
+                                <i class="fa-solid fa-medal"></i>
+                                <!-- <img src="profile_icons/sports_icon.png" alt="Sports Community Icon" class="community-icon"> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="font-weight-bold community-name p-2">r/health</span>
+                                <i class="fa-solid fa-hospital"></i>
+                                <!-- <img src="profile_icons/health_icon.png" alt="Health Community Icon" class="community-icon"> -->
+                            </a>
+                        </li>
+                        <!-- Add more communities -->
+                        <li>
+                            <a href="#">
+                                <span class="font-weight-bold community-name p-2">r/travel</span>
+                                <i class="fa-solid fa-plane"></i>
+                                <!-- <img src="profile_icons/travel_icon.png" alt="Travel Community Icon" class="community-icon"> -->
+                            </a>
+                        </li>
+                        <li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/3110fbbca9.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
